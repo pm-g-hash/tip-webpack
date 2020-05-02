@@ -105,6 +105,10 @@ const config = {
                 to: "./local/img"
             },
             {
+                from: "./src/fonts",
+                to: "./local/fonts"
+            },
+            {
                 from: "./src/uploads",
                 to: "./local/uploads"
             }

@@ -7,6 +7,7 @@
 html {
 	font-family: sans-serif;
 	line-height: 1.15;
+    width: 100%;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -15,10 +16,17 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
 	margin: 0;
-	font: 1rem/1.5 Arial, sans-serif;
-	color: #212529;
+	font: 12px/1.88 'TTNorms', sans-serif;
+    letter-spacing: .1rem;
+	color: var(--black);
 	text-align: left;
-	background-color: #fff;
+	background-color: var(--white);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html, body {
+    min-width: 1150px;
 }
 
 hr {
@@ -27,8 +35,16 @@ hr {
 	overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
 	margin: 0 0 0.5rem;
+}
+
+h2, .h2 {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 p {
@@ -74,14 +90,15 @@ sup {
 }
 
 a {
-	color: #007bff;
-	text-decoration: none;
-	background-color: transparent;
+    color: var(--blue);
+    text-decoration: none;
+    outline: none;
+    transition: all .3s;
 }
 
 a:hover {
-	color: #0056b3;
-	text-decoration: underline;
+	color: var(--blue);
+	text-decoration: none;
 }
 
 img {
@@ -120,10 +137,11 @@ button,
 select,
 optgroup,
 textarea {
-	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none;
 }
 
 button,

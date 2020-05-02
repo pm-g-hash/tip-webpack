@@ -1,0 +1,68 @@
+.pay-info {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 100px 0;
+    margin: 0 0 100px;
+
+    &__title {
+        margin: 0 0 85px;
+        text-align: center;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 50%;
+        position: relative;
+
+        &_left {
+            text-align: right;
+            padding: 0 115px 0 0;
+        }
+        &_right {
+            padding: 0 0 0 115px;
+        }
+    }
+    &__icon-anchor {
+        width: 54px;
+        height: 46px;
+        fill: var(--white);
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+    &__icon-cup {
+        width: 42px;
+        height: 46px;
+        fill: var(--white);
+        top: 15px;
+        position: absolute;
+        left: 35px;
+    }
+    &__name {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+    }
+    &__text {
+        font-size: 13px;
+        letter-spacing: .025em;
+    }
+    &__btn {
+        margin: 50px 0 0;
+        text-align: center;
+    }
+}
+
+.pay-system {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 5px 0;
+
+    &__img {
+        margin: 0 0 0 10px;
+    }
+}

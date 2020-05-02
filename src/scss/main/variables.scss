@@ -1,0 +1,31 @@
+:root {
+    --black: #000;
+    --white: #FFF;
+    --blue: #34558b;
+    --orange: #F5B995;
+    --brown: #a48e81;
+
+    --grey1: #222;
+    --grey2: #999;
+    --grey3: #666;
+    --grey4: #CCC;
+    --grey5: #EEE;
+    --grey6: #707070;
+}
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1150px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1130px
+);
+
+$gutter: 30px;

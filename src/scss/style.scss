@@ -1,8 +1,28 @@
-// Root - Var
-@import "./variables";
+// Основное
+@import "./main/fonts"; // Шрифты
+@import "./main/variables"; // Переменные
+@import "./main/reboot"; // Сброс стилей
+@import "./main/grid"; // Сетка
 
-// Reboot
-//@import "./reboot";
+// Общие элементы
+@import "./elem/swiper"; // Общие стили сайдера
+@import "./elem/slider.str"; // Стрелки слайдеров
+@import "./elem/slider.pagination"; // Пагинация слайдеров
+@import "./elem/btn"; // Кнопки
 
-// Grid
-@import "./grid";
+// Шаблон
+@import "./template/header"; // Шапка сайта
+@import "./template/menu.top"; // Верхнее меню
+@import "./template/menu.main"; // Главное меню
+@import "./template/footer"; // Подвал сайта
+@import "./template/menu.bottom"; // Нижнее меню
+
+// Главная страница
+@import "./pages/index/slider.main"; // Сетка
+@import "./pages/index/product.list"; // Список товаровbenefits.list
+@import "./pages/index/benefits.list"; // Преимуществаwe.working
+@import "./pages/index/we.working"; // Как мы работаем
+@import "./pages/index/review.slider"; // Отзывы
+@import "./pages/index/pay.info"; // Способы оплаты
+@import "./pages/index/client.slider"; // Клиенты
+@import "./pages/index/news.slider.scss"; // Новости

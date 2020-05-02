@@ -1,0 +1,36 @@
+.btn-link {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 7px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 130px;
+        height: 2px;
+        background-color: var(--white);
+        left: 50%;
+        transform: translate(-50%, 0);
+        transition: all .3s;
+    }
+    &_short:after {
+        width: 100px;
+    }
+    &_black {
+        color: var(--grey1);
+
+        &:after {
+            background-color: var(--grey1);
+        }
+    }
+    &:hover {
+
+        &:after {
+            background-color: var(--blue);
+        }
+    }
+}

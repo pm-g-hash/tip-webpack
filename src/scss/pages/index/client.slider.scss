@@ -1,0 +1,16 @@
+.client-slider {
+    padding: 90px 0 100px;
+    margin: 0 0 85px;
+    background-color: var(--grey5);
+    text-align: center;
+
+    &__title {
+        margin: 0 0 90px
+    }
+    &__block {
+        margin: 0 0 100px;
+    }
+    &__wrapper {
+        align-items: center;
+    }
+}

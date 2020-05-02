@@ -10,7 +10,7 @@
 	"dependencies": {
 		"@fancyapps/fancybox": "^3.5.7",
 		"jquery": "^3.5.0",
-		"swiper": "^5.3.6"
+		"swiper": "^5.3.8"
 	},
 	"devDependencies": {
 		"clean-webpack-plugin": "^2.0.1",
