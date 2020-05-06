@@ -13,6 +13,9 @@
             color: var(--white);
             letter-spacing: 0;
 
+            &:hover {
+                color: var(--orange);
+            }
             &_parent {
                 padding: 0 20px 0 0;
                 position: relative;
@@ -27,7 +30,7 @@
                     transition: all .3s;
                 }
                 &:hover:after {
-                    border-top-color: var(--blue);
+                    border-top-color: var(--orange);
                 }
             }
         }
@@ -69,6 +72,10 @@
             text-transform: uppercase;
             color: var(--white);
             display: block;
+
+            &:hover {
+                color: var(--orange);
+            }
         }
     }
     &__lvl1_parent:hover .menu-main__lvl2 {

@@ -7,6 +7,10 @@
 //@import "./grid/order";
 //@import "./grid/offset";
 
+.position-relative {
+    position: relative;
+}
+
 @each $breakpoint in map-keys($grid-breakpoints)
 {
     @include media-breakpoint-up($breakpoint)

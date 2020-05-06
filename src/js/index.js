@@ -3,6 +3,17 @@ import Swiper from './swiper.js';
 
 $(function() {
 
+	/* Прикрепляем шапку */
+    var headerOffsetTop = $(".main-header").offset().top;
+
+    $(window).scroll(function () {
+
+        var winTop = $(window).scrollTop();
+
+        if (winTop > headerOffsetTop) $(".main-header").addClass("main-header_fixed");
+		else $(".main-header").removeClass("main-header_fixed");
+    });
+
     // Главный слайдер
     let intSlideMainCount = $('.slider-main__slide').length;
 

@@ -9,6 +9,10 @@
     height: 114px;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
 
+    &_fixed {
+        position: fixed;
+        background-color: rgba(52,85,139,.7);
+    }
     &__info {
         color: var(--white);
         text-transform: uppercase;
@@ -16,12 +20,14 @@
         margin: 0 0 10px;
         letter-spacing: .025em;
     }
-    &__email {
-        color: var(--white);
-        margin: 0 15px;
-    }
+    &__email,
     &__phone {
         color: var(--white);
+        margin: 0 0 0 15px;
+
+        &:hover {
+            color: var(--orange);
+        }
     }
     &__logo {
         display: flex;
@@ -34,6 +40,7 @@
             font-weight: 300;
             letter-spacing: .16em;
             color: var(--white);
+            letter-spacing: -.005em;
         }
     }
     &__right {
