@@ -83,3 +83,106 @@
         margin: 65px 0 0;
     }
 }
+
+@include media-breakpoint-between(sm, md)
+{
+    .product-list {
+        margin: 0 0 80px;
+
+        &__items {
+            width: map-get($container-max-widths, md);
+            padding: 25px ($gutter / 2) 0;
+            column-count: 2;
+            column-gap: 20px;
+        }
+        &__item {
+            margin: 0 0 25px;
+
+            &:nth-child(n + 7) {
+                display: none;
+            }
+        }
+        &__price {
+            font-size: 30px;
+            left: 15px;
+            bottom: 15px;
+        }
+        &__like {
+
+            &-icon {
+                height: 26px;
+                width: 26px;
+            }
+        }
+        &__block {
+            text-transform: uppercase;
+            line-height: 1;
+            padding: 15px 15px 0;
+        }
+        .product-list__name {
+            font-size: 12px;
+            margin: 0 0 10px;
+        }
+        .product-list__more {
+            font-size: 10px;
+        }
+        &__btn {
+            margin: 45px 0 0;
+        }
+    }
+}
+@include media-breakpoint-only(sm)
+{
+    .product-list {
+
+        &__items {
+            width: map-get($container-max-widths, sm);
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .product-list {
+        margin: 0 0 55px;
+
+        &__items {
+            width: 100%;
+            padding: 25px ($gutter / 2) 0;
+            column-count: 1;
+        }
+        &__item {
+            margin: 0 0 25px;
+
+            &:nth-child(n + 4) {
+                display: none;
+            }
+        }
+        &__price {
+            font-size: 30px;
+            left: 15px;
+            bottom: 15px;
+        }
+        &__like {
+
+            &-icon {
+                height: 26px;
+                width: 26px;
+            }
+        }
+        &__block {
+            text-transform: uppercase;
+            line-height: 1;
+            padding: 15px 15px 0;
+        }
+        .product-list__name {
+            font-size: 12px;
+            margin: 0 0 10px;
+        }
+        .product-list__more {
+            font-size: 10px;
+        }
+        &__btn {
+            margin: 20px 0 0;
+        }
+    }
+}

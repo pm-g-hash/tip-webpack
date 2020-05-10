@@ -1,5 +1,4 @@
 .menu-bottom {
-    
 
     &__link {
         font-size: 13px;
@@ -11,6 +10,27 @@
 
         &:hover {
             color: var(--orange);
+        }
+    }
+}
+
+@include media-breakpoint-only(md)
+{
+    .menu-bottom {
+
+        &__link {
+            font-size: 11px;
+            letter-spacing: .1em;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .menu-bottom {
+        margin: 0 0 30px;
+
+        &__link {
+            font-size: 11px;
         }
     }
 }

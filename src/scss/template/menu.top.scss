@@ -1,6 +1,7 @@
 .menu-top {
     display: flex;
     align-items: center;
+    white-space: nowrap;
 
     &__link {
         color: var(--white);
@@ -11,6 +12,16 @@
 
         &:hover {
             color: var(--orange);
+        }
+    }
+}
+
+@include media-breakpoint-down(sm)
+{
+    .menu-top {
+
+        &__link {
+            margin: 0 10px 0 0;
         }
     }
 }

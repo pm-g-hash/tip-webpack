@@ -20,10 +20,13 @@
         margin: 0 0 10px;
         letter-spacing: .025em;
     }
+    &__addr,
+    &__email {
+        margin: 0 15px 0 0;
+    }
     &__email,
     &__phone {
         color: var(--white);
-        margin: 0 0 0 15px;
 
         &:hover {
             color: var(--orange);
@@ -38,9 +41,9 @@
             font-size: 15px;
             text-transform: uppercase;
             font-weight: 300;
-            letter-spacing: .16em;
             color: var(--white);
             letter-spacing: -.005em;
+            white-space: nowrap;
         }
     }
     &__right {
@@ -63,7 +66,75 @@
         transition: all .3s;
 
         &:hover {
-            fill: var(--blue);
+            fill: var(--orange);
+        }
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .main-header {
+        padding: 26px 20px 0;
+
+        &__addr,
+        &__email {
+            margin: 0 10px 0 0;
+        }
+    }
+}
+@include media-breakpoint-only(md)
+{
+    .main-header {
+        padding: 12px 20px 0;
+        background-color: var(--blue);
+
+        &__addr,
+        &__email {
+            display: none;
+        }
+        &__info {
+            margin: 0 0 15px;
+        }
+        &__logo {
+            align-items: flex-start;
+            flex-direction: column;
+
+            &-text {
+                font-size: 12px;
+                line-height: 1.4;
+                margin: 0;
+            }
+        }
+        &__right-top {
+            margin: 0 0 49px;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .main-header {
+        padding: 12px 15px 0;
+        background-color: var(--light-blue);
+
+        &__addr,
+        &__email {
+            display: none;
+        }
+        &__info {
+            margin: 0 0 15px;
+        }
+        &__logo {
+            align-items: flex-start;
+            flex-direction: column;
+
+            &-text {
+                font-size: 12px;
+                line-height: 1.4;
+                margin: 0;
+            }
+        }
+        &__right-top {
+            margin: 0 0 25px;
         }
     }
 }

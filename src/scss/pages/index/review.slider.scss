@@ -1,6 +1,8 @@
 .review-slider {
     text-align: center;
     margin: 0 0 100px;
+    max-width: 100%;
+    overflow: hidden;
 
     &__title {
         margin: 0 0 90px;
@@ -60,5 +62,64 @@
     }
     &__next {
         right: 42px;
+    }
+}
+
+@include media-breakpoint-between(sm, md)
+{
+    .review-slider {
+
+        &__title {
+            margin: 0 0 75px;
+        }
+        &__inner {
+            max-width: 365px;
+            margin: 0 auto 50px;
+        }
+        &__slide {
+            border: none;
+            padding: 0;
+        }
+        .review-slider__text {
+            letter-spacing: .05em;
+        }
+        &__prev {
+            left: 20px;
+        }
+        &__next {
+            right: 20px;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .review-slider {
+        margin: 0 0 50px;
+
+        &__title {
+            margin: 0 0 45px;
+        }
+        &__inner {
+            margin: 0 auto 35px;
+        }
+        &__slide {
+            border: none;
+            padding: 0;
+        }
+        &__name {
+            line-height: 1;
+            margin: 0 0 10px;
+        }
+        &__prev,
+        &__next {
+            top: 70px;
+            transform: none;
+        }
+        &__prev {
+            left: 25px;
+        }
+        &__next {
+            right: 25px;
+        }
     }
 }

@@ -22,11 +22,6 @@ body {
 	text-align: left;
 	background-color: var(--white);
     width: 100%;
-    overflow-x: hidden;
-}
-
-html, body {
-    min-width: 1150px;
 }
 
 hr {
@@ -42,9 +37,16 @@ h1, h2, h3, h4, h5, h6,
 
 h2, .h2 {
     font-size: 36px;
-    line-height: 1;
+    line-height: 1.25;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@include media-breakpoint-down(sm)
+{
+    h2, .h2 {
+        font-size: 28px;
+    }
 }
 
 p {
