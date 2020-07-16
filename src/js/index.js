@@ -202,4 +202,40 @@ $(function() {
             },
         }
     });
+
+    // Cлайдер страница Product
+    let intSlideProductCount = $('.slider-product__slide').length;
+
+    let sliderProduct = new Swiper('.slider-product__slider', {
+        loop: true,
+        navigation: {
+            prevEl: '.slider-product__prev',
+            nextEl: '.slider-product__next',
+        },
+        pagination: {
+            clickable: true,
+            el: '.slider-product__pagination',
+            bulletClass: 'slider-pagination__point',
+            bulletActiveClass: 'slider-pagination__point_active',
+        },
+    });
+
+    $('.slider-product__count-prev').text(intSlideProductCount + ' / ' + intSlideProductCount);
+    $('.slider-product__count-next').text('2 / ' + intSlideProductCount);
+
+    sliderProduct.on('slideChange', function () {
+
+        let intActive = sliderProduct.activeIndex;
+
+        if (intActive > intSlideProductCount) intActive = intActive - intSlideProductCount;
+        
+        let intPrev = intActive - 1;
+        let intNext = intActive + 1;
+
+        if (intPrev < 1) intPrev = intSlideProductCount + intPrev;
+        if (intNext > intSlideProductCount) intNext = intNext - intSlideProductCount;
+
+        $('.slider-product__count-prev').text(intPrev + ' / ' + intSlideProductCount);
+        $('.slider-product__count-next').text(intNext + ' / ' + intSlideProductCount);
+    });
 });

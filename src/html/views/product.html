@@ -1,0 +1,128 @@
+<% var data = {
+    title: "PrintMe - Product",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <a href="javascript:;" class="breadcrumbs__link">ВСЯ ПРОДУКЦИЯ</a> / 
+        <span class="breadcrumbs__current">ВИЗИТКИ</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ПЕЧАТЬ ВИЗИТОК В МОСКВЕ</h1>
+
+</div>
+
+<!-- Шапка товара -->
+<div class="product-head">
+    <div class="product-head__left">
+
+        <!-- Cлайдер товара -->
+        <div class="slider-product">
+            <div class="swiper-container slider-product__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-product__slide">
+                        <img src="/local/uploads/product.slider.jpg" class="slider-product__img" alt="">
+                    </div>
+                    <div class="swiper-slide slider-product__slide">
+                        <img src="/local/uploads/product.slider.jpg" class="slider-product__img" alt="">
+                    </div>
+                    <div class="swiper-slide slider-product__slide">
+                        <img src="/local/uploads/product.slider.jpg" class="slider-product__img" alt="">
+                    </div>
+                </div>
+            </div>
+            <a class="slider-product__prev" href="javascript:;">
+                <span class="str-prev"></span>
+                <span class="slider-product__count-prev"></span>
+            </a>
+            <a class="slider-product__next" href="javascript:;">
+                <span class="slider-product__count-next"></span>
+                <span class="str-next"></span>
+            </a>
+            <div class="slider-product__pagination slider-pagination"></div>
+        </div>
+
+    </div>
+    <div class="product-head__right">
+
+        <!-- Иконки товара -->
+        <div class="product-icons">
+            <div class="product-icons__item">
+                <div class="product-icons__pict">
+                    <svg class="product-icons__icon">
+                        <use xlink:href="/local/img/sprite.product.svg#linux"></use>
+                    </svg>
+                </div>
+                <div class="product-icons__name">
+                    900 РУБ. ЗА 10 ШТ.
+                </div>
+                <div class="product-icons__desc">
+                    60x25 мм,<br>
+                    пластиковые, с булавкой
+                </div>
+            </div>
+            <div class="product-icons__item">
+                <div class="product-icons__pict">
+                    <svg class="product-icons__icon">
+                        <use xlink:href="/local/img/sprite.product.svg#bomb"></use>
+                    </svg>
+                </div>
+                <div class="product-icons__name">
+                    СРОК ИЗГОТОВЛЕНИЯ
+                </div>
+                <div class="product-icons__desc">
+                    быстро
+                </div>
+            </div>
+            <div class="product-icons__item">
+                <div class="product-icons__pict">
+                    <svg class="product-icons__icon">
+                        <use xlink:href="/local/img/sprite.product.svg#reddit"></use>
+                    </svg>
+                </div>
+                <div class="product-icons__name">
+                    ЗАКАЗАТЬ ДИЗАЙН
+                </div>
+            </div>
+            <div class="product-icons__item">
+                <div class="product-icons__pict">
+                    <svg class="product-icons__icon">
+                        <use xlink:href="/local/img/sprite.product.svg#connect"></use>
+                    </svg>
+                </div>
+                <div class="product-icons__name">
+                    КОНСТРУКТОР МАКЕТОВ
+                </div>
+            </div>
+        </div>
+
+        <div class="product-head__text">
+            ПЕЧАТЬ И ИЗГОТОВЛЕНИЕ БЕЙДЖЕЙ НА ЗАКАЗ ЛЮБЫХ ФОРМ И РАЗМЕРОВ
+            ИСПОЛЬЗУЕМ ТОЛЬКО КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ (ПЛАСТИК ИЛИ МЕТАЛЛ)
+            СОБСТВЕННОЕ ОБОРУДОВАНИЕ<br>
+            В СЛУЧАЕ БРАКА, ВОЗВРАТ ДЕНЕГ В РАЗМЕРЕ 100%
+        </div>
+
+        <div class="product-head__more">
+            <a href="javascript::" class="product-head__more-link">
+                <span class="str-prev str-prev_black"></span>
+                <span class="product-head__more-prev">ЕЩЁ ПРОДУКЦИЯ</span>
+            </a>
+            <a href="javascript::" class="product-head__more-link">
+                <span class="product-head__more-next">ЕЩЁ ПРОДУКЦИЯ</span>
+                <span class="str-next str-next_black"></span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
