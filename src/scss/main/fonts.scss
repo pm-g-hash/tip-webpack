@@ -22,6 +22,13 @@
 @font-face {
     font-family: 'TTNorms';
     font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('TTNorms Medium'), local('TTNorms-Medium'), url('./fonts/TTNorms-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'TTNorms';
+    font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: local('TTNorms Bold'), local('TTNorms-Bold'), url('./fonts/TTNorms-Bold.woff2') format('woff2');

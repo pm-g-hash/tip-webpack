@@ -6,6 +6,7 @@
 
     &__left {
         width: calc(100% - 720px);
+        position: relative;
     }
     &__right {
         padding: 45px 65px 0;

@@ -151,8 +151,10 @@ th {
 }
 
 label {
-	display: inline-block;
-	margin: 0 0 0.5rem;
+    display: block;
+    margin: 0 0 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 button {

@@ -10,6 +10,8 @@
 @import "./elem/slider.pagination"; // Пагинация слайдеров
 @import "./elem/btn"; // Кнопки
 @import "./elem/breadcrumbs"; // Хлебные крошки
+@import "./elem/form.one"; // Первая форма
+@import "./elem/jquery.formstyler"; // Стилизация элементов
 
 // Шаблон
 @import "./template/header"; // Шапка сайта
@@ -38,3 +40,4 @@
 @import "./pages/product/head"; // Шапка
 @import "./pages/product/slider"; // Слайдер
 @import "./pages/product/icons"; // Иконки
+@import "./pages/product/calc"; // Печать / Обработка

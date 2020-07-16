@@ -1,10 +1,14 @@
 import $ from "jquery";
 import Swiper from './swiper.js';
+import formstyler from './jquery.formstyler.js';
 
 window.jQuery = $;
 window.$ = $;
 
 $(function() {
+
+    // Стилизация элементов
+    $('select').styler();
 
 	// Прикрепляем шапку
     var headerOffsetTop = $(".main-header").offset().top;
@@ -204,21 +208,30 @@ $(function() {
     });
 
     // Cлайдер страница Product
+    let galleryThumbs = new Swiper('.slider-product-thumbs__slider', {
+		spaceBetween: 10,
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+	});
+
     let intSlideProductCount = $('.slider-product__slide').length;
 
     let sliderProduct = new Swiper('.slider-product__slider', {
         loop: true,
+        spaceBetween: 10,
         navigation: {
             prevEl: '.slider-product__prev',
             nextEl: '.slider-product__next',
         },
-        pagination: {
-            clickable: true,
-            el: '.slider-product__pagination',
-            bulletClass: 'slider-pagination__point',
-            bulletActiveClass: 'slider-pagination__point_active',
-        },
+		thumbs: {
+			swiper: galleryThumbs,
+			slideThumbActiveClass: 'slider-product-thumbs__item_active',
+		}
     });
+
+    sliderProduct.controller.control = galleryThumbs;
 
     $('.slider-product__count-prev').text(intSlideProductCount + ' / ' + intSlideProductCount);
     $('.slider-product__count-next').text('2 / ' + intSlideProductCount);
