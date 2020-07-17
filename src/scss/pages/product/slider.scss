@@ -77,23 +77,11 @@
 {
     .slider-product {
 
-        &__slide {
-            height: 710px;
-            overflow: hidden;
-        }
-        &__img {
-            height: 100%;
-            max-width: 1920px;
-            width: auto;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 0);
-        }
         &__prev {
-            left: 20px;
+            left: 30px;
         }
         &__next {
-            right: 20px;
+            right: 30px;
         }
     }
 }

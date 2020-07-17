@@ -5,6 +5,9 @@
     text-transform: uppercase;
     position: relative;
     padding: 0 0 7px;
+    background: transparent;
+    border: none;
+    transition: all .3s;
 
     &:after {
         content: "";
@@ -17,6 +20,9 @@
         transform: translate(-50%, 0);
         transition: all .3s;
     }
+    &_fix:after {
+        width: 100%;
+    }
     &_short:after {
         width: 100px;
     }
@@ -25,9 +31,11 @@
 
         &:after {
             background-color: var(--grey1);
+            transition: all .3s;
         }
     }
     &:hover {
+        color: var(--blue);
 
         &:after {
             background-color: var(--blue);

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0 100px;
+    flex-wrap: wrap;
 
     &__part {
         width: calc(100% / 3);
@@ -65,6 +66,7 @@
         padding: 0;
         width: 370px;
         margin: 0 0 30px;
+        max-width: 100%;
     }
     &__info {
         text-align: center;
@@ -75,6 +77,21 @@
             font-weight: 500;
             text-transform: uppercase;
             margin: 0 0 15px;
+        }
+    }
+}
+
+@include media-breakpoint-between(md, lg)
+{
+    .product-calc {
+
+        &__part {
+            width: 100%;
+            padding: 65px 0 35px;
+        }
+        &__inner {
+            max-width: 580px;
+            margin: auto;
         }
     }
 }

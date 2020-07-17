@@ -251,4 +251,76 @@ $(function() {
         $('.slider-product__count-prev').text(intPrev + ' / ' + intSlideProductCount);
         $('.slider-product__count-next').text(intNext + ' / ' + intSlideProductCount);
     });
+
+    // Слайдер Faq
+    let intDeleteFaq = 3;
+
+    if ($(window).width() < 576)
+    {
+        intDeleteFaq = 1;
+    }
+    else if ($(window).width() < 992)
+    {
+        intDeleteFaq = 2;
+    }
+
+    let intSliderFaqCount = Math.ceil($('.slider-faq__slide').length / intDeleteFaq);
+
+    $('.slider-faq__count').text('1 / ' + intSliderFaqCount);
+
+    let sliderFaq = new Swiper('.slider-faq__slider', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 25,
+            },
+        },
+        navigation: {
+            prevEl: '.slider-faq__prev',
+            nextEl: '.slider-faq__next',
+            disabledClass: 'str-disabled'
+        },
+        on: {
+            slideChange: function () {
+
+                $('.slider-faq__count').text(Math.ceil(sliderFaq.activeIndex / intDeleteFaq + 1) + ' / ' + intSliderFaqCount);
+            },
+        }
+    });
+
+    $('.slider-faq__name').click(function(){
+
+        $(this).next('.slider-faq__text').slideToggle();
+    });
+
+    // Cлайдер отзывов
+    new Swiper('.review-slider2', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            clickable: true,
+            el: '.review-slider2__pagination',
+            bulletClass: 'slider-pagination__point',
+            bulletActiveClass: 'slider-pagination__point_active',
+        },
+    });
+
+    // Установка рейтинга в форме отзыва
+    $('.js-set-rating').click(function(){
+
+        $('.star-line_set').removeClass('star-line_set');
+        $(this).addClass('star-line_set');
+
+        $('#' + $(this).data('input')).val($(this).data('value'));
+    });
 });

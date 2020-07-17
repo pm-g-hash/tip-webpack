@@ -14,3 +14,10 @@
         }
     }
 }
+
+@include media-breakpoint-between(md, lg)
+{
+    .form-one__line {
+        margin: 0 0 40px;
+    }
+}

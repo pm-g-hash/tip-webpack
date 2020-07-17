@@ -11,7 +11,9 @@
 @import "./elem/btn"; // Кнопки
 @import "./elem/breadcrumbs"; // Хлебные крошки
 @import "./elem/form.one"; // Первая форма
+@import "./elem/form.two"; // Вторая форма
 @import "./elem/jquery.formstyler"; // Стилизация элементов
+@import "./elem/star"; // Звёздочки
 
 // Шаблон
 @import "./template/header"; // Шапка сайта
@@ -41,3 +43,9 @@
 @import "./pages/product/slider"; // Слайдер
 @import "./pages/product/icons"; // Иконки
 @import "./pages/product/calc"; // Печать / Обработка
+@import "./pages/product/link"; // Печать / Обработка
+@import "./pages/product/text"; // Текстовый блок
+@import "./pages/product/table"; // Таблица цен
+@import "./pages/product/faq"; // Частые вопросы
+@import "./pages/product/video"; // Блок видео
+@import "./pages/product/review"; // Блок отзывов
