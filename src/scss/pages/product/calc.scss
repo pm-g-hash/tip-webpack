@@ -79,6 +79,10 @@
             margin: 0 0 15px;
         }
     }
+
+    &-tabs {
+        display: none;
+    }
 }
 
 @include media-breakpoint-between(md, lg)
@@ -92,6 +96,58 @@
         &__inner {
             max-width: 580px;
             margin: auto;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .product-calc {
+        margin: 0 0 55px;
+
+        &__part {
+            width: 100%;
+            padding: 55px 0 35px;
+            display: none;
+
+            &_active {
+                display: block;
+            }
+        }
+        &__inner {
+            max-width: 270px;
+            margin: auto;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__title {
+            display: none;
+        }
+
+        &-tabs {
+            display: block;
+
+            &__block {
+                display: flex;
+                margin: 0 0 15px;
+            }
+            &__link {
+                font-size: 14px;
+                font-weight: bold;
+                color: var(--grey2);
+                padding: 0 0 5px;
+                border-bottom: 3px solid var(--grey2);
+                width: calc(100% / 3);
+                text-align: center;
+
+                &_active {
+                    border-color: var(--blue);
+                }
+                &_disabled {
+                    text-decoration: line-through;
+                    color: var(--grey1);
+                }
+            }
         }
     }
 }

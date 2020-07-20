@@ -32,3 +32,10 @@
         margin: auto;
     }
 }
+
+@include media-breakpoint-down(sm)
+{
+    .video-block {
+        display: none;
+    }
+}

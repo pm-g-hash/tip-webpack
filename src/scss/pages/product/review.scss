@@ -32,10 +32,48 @@
     }
 }
 
-@include media-breakpoint-between(md, lg)
+@include media-breakpoint-only(lg)
 {
     .review-block__left {
         max-width: 440px;
+    }
+}
+@include media-breakpoint-only(md)
+{
+    .review-block {
+
+        &__left,
+        &__right {
+            max-width: 49%;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .review-block {
+        margin: 0 0 55px;
+
+        &__block {
+            padding: 0;
+            border: none;
+        }
+        &__head {
+
+            &:after {
+                bottom: -15px;
+                height: 2px;
+            }
+        }
+        &__items {
+            flex-direction: column;
+        }
+        &__left,
+        &__right {
+            max-width: 100%;
+        }
+        &__left {
+            margin: 0 0 50px;
+        }
     }
 }
 
@@ -44,6 +82,7 @@
     &__top {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     &__name {
         font-size: 14px;
@@ -60,6 +99,16 @@
     }
     &__pagination {
         margin: 40px 0 0;
+    }
+}
+
+@include media-breakpoint-down(md)
+{
+    .review-slider2 {
+
+        &__pagination {
+            margin: 0;
+        }
     }
 }
 

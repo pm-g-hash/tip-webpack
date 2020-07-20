@@ -50,6 +50,7 @@
                 <span class="slider-product__count-next"></span>
                 <span class="str-next"></span>
             </a>
+            <div class="slider-product__pagination slider-pagination"></div>
         </div>
 
         <div class="slider-product-thumbs">
@@ -146,10 +147,19 @@
     </div>
 </div>
 
+<div class="product-calc-tabs">
+    <div class="container">
+        <div class="product-calc-tabs__block">
+            <a href="#tab1" class="product-calc-tabs__link product-calc-tabs__link_active">ПЕЧАТЬ</a>
+            <a href="#tab2" class="product-calc-tabs__link">ОБРАБОТКА</a>
+            <a href="#tab3" class="product-calc-tabs__link">ЦЕНА</a>
+        </div>
+    </div>
+</div>
 <div class="product-calc">
-    <div class="product-calc__part product-calc__part_orange">
+    <div class="product-calc__part product-calc__part_orange product-calc__part_active" id="tab1">
         <div class="product-calc__inner">
-            <div class="h3">ПЕЧАТЬ</div>
+            <div class="product-calc__title h3">ПЕЧАТЬ</div>
             <div class="product-calc__items form-one">
                 <div class="product-calc__item">
                     <div class="form-one__line">
@@ -250,9 +260,9 @@
             </div>
         </div>
     </div>
-    <div class="product-calc__part product-calc__part_blue">
+    <div class="product-calc__part product-calc__part_blue" id="tab2">
         <div class="product-calc__inner">
-            <div class="h3">ОБРАБОТКА</div>
+            <div class="product-calc__title h3">ОБРАБОТКА</div>
             <div class="product-calc__items form-one">
                 <div class="product-calc__item">
                     <div class="form-one__line">
@@ -353,7 +363,7 @@
             </div>
         </div>
     </div>
-    <div class="product-calc__part product-calc__part_brown">
+    <div class="product-calc__part product-calc__part_brown" id="tab3">
         <div class="product-calc__inner">
             <div class="h3">ДАТА: 26.05.2020</div>
             <div class="product-calc__price">
@@ -815,7 +825,7 @@
                                 <div class="form-two__line">
                                     <textarea class="form-two__textarea" placeholder="отзыв:"></textarea>
                                 </div>
-                                <div class="form-two__line">
+                                <div class="form-two__btn">
                                     <button type="submit" class="btn-link btn-link_black btn-link_fix">ОТПРАВИТЬ</button>
                                 </div>
                             </div>

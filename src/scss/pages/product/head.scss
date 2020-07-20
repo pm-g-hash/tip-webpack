@@ -42,7 +42,7 @@
     }
 }
 
-@include media-breakpoint-between(md, lg)
+@include media-breakpoint-down(lg)
 {
     .product-head {
         flex-direction: column;
@@ -71,5 +71,22 @@
 {
     .product-head {
         width: map-get($container-max-widths, md);
+    }
+}
+@include media-breakpoint-only(sm)
+{
+    .product-head {
+        width: map-get($container-max-widths, sm);
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .product-head {
+        margin: 0 auto;
+
+        &__text,
+        &__more {
+            display: none;
+        }
     }
 }

@@ -2,10 +2,6 @@
     text-align: center;
     margin: 0 0 100px;
 
-    &__block {
-        padding: 0 0 50px;
-        border-bottom: 1px solid var(--grey5);
-    }
     &__head {
         margin: 0 0 30px;
         font-weight: bold;
@@ -16,5 +12,22 @@
     }
     &__btn {
         margin: 20px 0 0;
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .product-text {
+
+        &__block {
+            padding: 0 0 50px;
+            border-bottom: 1px solid var(--grey5);
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .product-text {
+        margin: 0 0 55px;
     }
 }

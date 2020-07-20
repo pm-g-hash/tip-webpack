@@ -228,7 +228,13 @@ $(function() {
 		thumbs: {
 			swiper: galleryThumbs,
 			slideThumbActiveClass: 'slider-product-thumbs__item_active',
-		}
+		},
+        pagination: {
+            clickable: true,
+            el: '.slider-product__pagination',
+            bulletClass: 'slider-pagination__point',
+            bulletActiveClass: 'slider-pagination__point_active',
+        },
     });
 
     sliderProduct.controller.control = galleryThumbs;
@@ -255,13 +261,9 @@ $(function() {
     // Слайдер Faq
     let intDeleteFaq = 3;
 
-    if ($(window).width() < 576)
+    if ($(window).width() < 992)
     {
         intDeleteFaq = 1;
-    }
-    else if ($(window).width() < 992)
-    {
-        intDeleteFaq = 2;
     }
 
     let intSliderFaqCount = Math.ceil($('.slider-faq__slide').length / intDeleteFaq);
@@ -273,11 +275,6 @@ $(function() {
         slidesPerGroup: 1,
         spaceBetween: 20,
         breakpoints: {
-            576: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 30,
-            },
             992: {
                 slidesPerView: 3,
                 slidesPerGroup: 3,
@@ -322,5 +319,17 @@ $(function() {
         $(this).addClass('star-line_set');
 
         $('#' + $(this).data('input')).val($(this).data('value'));
+    });
+
+    // Табы на мобилке (product-calc)
+    $('.product-calc-tabs__link').click(function(){
+
+        $('.product-calc-tabs__link_active').removeClass('product-calc-tabs__link_active');
+        $(this).addClass('product-calc-tabs__link_active');
+
+        $('.product-calc__part_active').removeClass('product-calc__part_active');
+        $($(this).attr('href')).addClass('product-calc__part_active');
+
+        return false;
     });
 });

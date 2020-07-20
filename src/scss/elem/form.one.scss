@@ -21,3 +21,9 @@
         margin: 0 0 40px;
     }
 }
+@include media-breakpoint-down(sm)
+{
+    .form-one__line {
+        margin: 0 0 30px;
+    }
+}

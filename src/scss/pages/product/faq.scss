@@ -51,3 +51,21 @@
         margin: 0 50px;
     }
 }
+
+@include media-breakpoint-only(md)
+{
+    .slider-faq {
+        overflow: hidden;
+
+        &__slider {
+            max-width: 350px;
+            overflow: visible;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .slider-faq {
+        margin: 0 0 50px;
+    }
+}

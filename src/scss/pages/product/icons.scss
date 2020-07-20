@@ -43,3 +43,14 @@
         }
     }
 }
+@include media-breakpoint-down(sm)
+{
+    .product-icons {
+        max-width: 100%;
+        margin: 0;
+
+        &__item {
+            margin: 0 0 50px;
+        }
+    }
+}
