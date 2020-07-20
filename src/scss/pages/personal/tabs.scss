@@ -19,15 +19,15 @@
 
             &_active {
                 text-decoration: line-through;
-                background-color: var(--brown);
+                background-color: var(--brown-opacity);
             }
         }
     }
     &-block {
-        background-color: var(--brown);
+        background-color: var(--brown-opacity);
 
         &__inner {
-            padding: 50px 20px 0;
+            padding: 50px 60px;
         }
     }
 }
@@ -39,7 +39,7 @@
         &-links {
 
             &__link {
-                border-left: 1px solid var(--grey6);
+                border-left: 1px solid var(--grey2);
 
                 &:first-child {
                     border: none;
@@ -77,12 +77,13 @@
             &__link {
                 font-size: 16px;
                 line-height: 1.4;
+                padding: 0 10px;
             }
         }
         &-block {
 
             &__inner {
-                padding: 40px 25px 0;
+                padding: 40px 25px;
             }
         }
     }
