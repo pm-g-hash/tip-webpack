@@ -19,3 +19,9 @@
         margin: 0 0 40px;
     }
 }
+@include media-breakpoint-only(xs)
+{
+    .requisites-block__input {
+        margin: 0 0 20px;
+    }
+}
