@@ -57,6 +57,7 @@
     transition: all .3s;
     cursor: pointer;
     text-align: center;
+    letter-spacing: .1rem;
 
     &:hover {
         background-color: var(--light-blue);

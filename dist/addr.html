@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-        <title>PrintMe - Order</title>
+        <title>PrintMe - Addr</title>
         <link href="./local/template_styles.css?89788e5d39e1f4d8e1db" rel="stylesheet" />
     </head>
 
@@ -130,96 +130,64 @@
 
                 <div class="personal-tabs">
                     <div class="personal-tabs-links">
-                        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">МОИ ЗАКАЗЫ</a>
+                        <a href="javascript:;" class="personal-tabs-links__link">МОИ ЗАКАЗЫ</a>
                         <a href="javascript:;" class="personal-tabs-links__link">РЕКВИЗИТЫ</a>
-                        <a href="javascript:;" class="personal-tabs-links__link">АДРЕСА ДОСТАВКИ</a>
+                        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">АДРЕСА ДОСТАВКИ</a>
                         <a href="javascript:;" class="personal-tabs-links__link">ПРОФИЛЬ</a>
                     </div>
                     <div class="personal-tabs-block">
                         <div class="personal-tabs-block__inner">
-                            <div class="personal-btns">
-                                <a href="javascript:;" class="personal-btns__btn">ЧТО ЕСТЬ</a>
-                                <a href="javascript:;" class="personal-btns__btn">ЧТО БЫЛО</a>
-                                <a href="javascript:;" class="personal-btns__btn personal-btns__btn_sm100">КАК ПОЛУЧИТЬ</a>
-                                <a href="javascript:;" class="personal-btns__btn personal-btns__btn_sm100">ОТКАЖУСЬ ПОЖАЛУЙ</a>
+                            <div class="personal-form form-three">
+                                <form>
+                                    <div class="form-three__label">
+                                        <svg class="form-three__label-icon-big">
+                                            <use xlink:href="/local/img/sprite.icon.svg#home"></use>
+                                        </svg>
+                                        AДРЕС ДЛЯ ДОСТАВКИ ЗАКАЗА НАХОДИТСЯ
+                                    </div>
+                                    <div class="form-three__label">
+                                        ВВЕДИТЕ АДРЕС ДОСТАВКИ (НОМЕР ДОМА, КОРПУС, КВАРТИРА И Т.Д.)
+                                    </div>
+                                    <div class="form-three__line">
+                                        <a href="javascript:;" class="form-three__info form-three__info_short form-three__info_link">Москва</a>
+                                        <input class="form-three__input form-three__input_padding-short" type="text" value="" />
+                                    </div>
+                                    <div class="personal-form__double">
+                                        <div class="personal-form__double-part">
+                                            <div class="form-three__label">
+                                                КОНТАКТНОЕ ЛИЦО*
+                                            </div>
+                                            <div class="form-three__line">
+                                                <input class="form-three__input" type="text" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="personal-form__double-part">
+                                            <div class="form-three__label">
+                                                ТЕЛЕФОН*
+                                            </div>
+                                            <div class="form-three__line">
+                                                <input class="form-three__input" type="tel" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-three__label">
+                                        <svg class="form-three__label-icon">
+                                            <use xlink:href="/local/img/sprite.icon.svg#check"></use>
+                                        </svg>
+                                        НАДО ВСЁ ЗАПОЛНИТЬ!
+                                    </div>
+                                    <div class="form-three__label">
+                                        КОММЕНТАРИЙ К АДРЕСУ
+                                    </div>
+                                    <div class="form-three__line">
+                                        <textarea class="form-three__textarea" placeholder="Укажите номер офиса, наличие документов на въезд, ну и вообще надо вам это или нет?"></textarea>
+                                    </div>
+                                    <div class="personal-form__btns">
+                                        <button type="submit" class="personal-form__btn btn-one">СОХРАНИТЬ</button>
+                                        <a href="javascript:;" class="personal-form__btn btn-one">ОТКАЗАТЬСЯ</a>
+                                    </div>
+                                </form>
                             </div>
-                        </div>
-
-                        <div class="order-head">
-                            <div class="order-head__item">
-                                Заказы
-                                <a href="javascript:;" class="order-head__delete">
-                                    <svg class="order-head__delete-icon">
-                                        <use xlink:href="/local/img/sprite.icon.svg#close"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="order-head__item">
-                                Статус
-                            </div>
-                            <div class="order-head__item">
-                                Способ получения
-                            </div>
-                            <div class="order-head__item">
-                                Оплата
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="order-table">
-                    <div class="order-table__item">
-                        <div class="order-table__title">
-                            <svg class="order-table__icon">
-                                <use xlink:href="/local/img/sprite.icon.svg#over"></use>
-                            </svg>
-                            № 217152 от 12.06.2020, 20:31
-                        </div>
-                        Визитная карточка (90x50 мм), 1000 шт.<br />
-                        300 г/м², 4+4
-                        <a href="javascript:;" class="order-table__delete">
-                            <svg class="order-table__delete-icon">
-                                <use xlink:href="/local/img/sprite.icon.svg#close"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="order-table__item">
-                        <div class="order-table__title">
-                            <svg class="order-table__icon">
-                                <use xlink:href="/local/img/sprite.icon.svg#cat"></use>
-                            </svg>
-                            ОЖИДАНИЕ МАКЕТА
-                        </div>
-                        Загрузите 15.06.2020 до 16:00
-                    </div>
-                    <div class="order-table__item">
-                        <div class="order-table__title">
-                            <svg class="order-table__icon">
-                                <use xlink:href="/local/img/sprite.icon.svg#people"></use>
-                            </svg>
-                            САМОВЫВОЗ СО СКЛАДА
-                        </div>
-                        Москва, ул. Балтийская 11.<br />
-                        16.06.2020 c 10:30
-                    </div>
-                    <div class="order-table__item">
-                        <div class="order-table__title">
-                            <svg class="order-table__icon">
-                                <use xlink:href="/local/img/sprite.icon.svg#anchor"></use>
-                            </svg>
-                            НАЛИЧНЫЙ РАСЧЁТ
-                        </div>
-                        Ожидает оплаты
-                    </div>
-                    <div class="order-table__line">
-                        <div class="order-table__btns">
-                            <a href="javascript:;" class="order-table__btn btn-one">ЗАГРУЗИТЬ МАКЕТЫ</a>
-                            <a href="javascript:;" class="order-table__btn btn-one">ОТКАЗАТЬСЯ</a>
-                            <a href="javascript:;" class="order-table__btn btn-one">ОПЛАТИТЬ</a>
-                        </div>
-                        <div class="order-table__price">
-                            ЦЕНА:
-                            <div class="order-table__price-value">5 607₽</div>
                         </div>
                     </div>
                 </div>
