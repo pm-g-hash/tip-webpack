@@ -33,7 +33,10 @@
                 <form>
 
                     <div class="form-three__line">
-                        <span class="form-three__info">ФАМИЛИЯ, ИМЯ:</span>
+                        <span class="form-three__info">
+                            <span class="d-none d-sm-inline-block">ФАМИЛИЯ, ИМЯ:</span>
+                            <span class="d-sm-none">ФИО:</span>
+                        </span>
                         <input class="form-three__input form-three__input_padding-full" type="text" value="ВАСЯ ВАСИН">
                         <svg class="form-three__input-icon">
                             <use xlink:href="/local/img/sprite.icon.svg#paint"></use>
@@ -62,9 +65,11 @@
                     </div>
                     <div class="form-three__line">
                         <span class="form-three__info">ВАШ МЕНЕДЖЕР: </span>
-                        <input class="form-three__input form-three__input_disabled form-three__input_padding-full" type="text" value="АНДРЕУС ЭЛИНА, ТЕЛ. 909-06-24 (ДОБ. 225), AEK@PRINTME.RU" disabled>
+                        <div class="form-three__input form-three__input_padding-full form-three__input_div">
+                            АНДРЕУС ЭЛИНА, ТЕЛ. 909-06-24 (ДОБ. 225), AEK@PRINTME.RU
+                        </div>
                     </div>
-                    <div class="form-three__label">
+                    <div class="form-three__label form-three__label_icon">
                         <svg class="form-three__label-icon">
                             <use xlink:href="/local/img/sprite.icon.svg#minus"></use>
                         </svg>
