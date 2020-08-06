@@ -21,6 +21,22 @@ $(function() {
 		else $(".main-header").removeClass("main-header_fixed");
     });
 
+    // Форма поиска
+    $('.main-header__search').click(function(){
+
+        $('.search-form').addClass('search-form_active');
+    });
+
+	$(document).mouseup(function (e){
+
+        var div = $(".search-form");
+
+        if (!div.is(e.target) && div.has(e.target).length === 0)
+        {
+            div.removeClass('search-form_active');
+        }
+	});
+
     // Меню
     if ($(window).width() < 768)
     {
@@ -112,10 +128,10 @@ $(function() {
                 spaceBetween: 40,
             },
         },
-        navigation: {
+/*        navigation: {
             prevEl: '.review-slider__prev',
             nextEl: '.review-slider__next',
-        },
+        },*/
         pagination: {
             clickable: true,
             el: '.review-slider__pagination',
@@ -237,7 +253,7 @@ $(function() {
         },
     });
 
-    sliderProduct.controller.control = galleryThumbs;
+    //sliderProduct.controller.control = galleryThumbs;
 
     $('.slider-product__count-prev').text(intSlideProductCount + ' / ' + intSlideProductCount);
     $('.slider-product__count-next').text('2 / ' + intSlideProductCount);

@@ -10,7 +10,7 @@
     }
     &__item {
         margin: 0 0 50px;
-        break-inside: avoid; 
+        display: inline-block;
     }
     &__inner {
         position: relative;

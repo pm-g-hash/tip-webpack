@@ -9,8 +9,7 @@
         margin: auto;
     }
     &__item {
-        display: flex;
-        flex-direction: column;
+        display: inline-block;
         margin: 0 0 50px;
     }
     &__inner {
