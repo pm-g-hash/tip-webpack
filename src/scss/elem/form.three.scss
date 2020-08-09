@@ -120,21 +120,28 @@
     &__check {
         display: flex;
         margin: -10px 0 40px;
+        flex-wrap: wrap;
 
         &-part {
             position: relative;
+            margin: 0 70px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
         }
         &-input {
             position: absolute;
             opacity: 0;
         }
         &-label {
-            margin: 0 70px 0 0;
             white-space: nowrap;
             display: flex;
             align-items: center;
             cursor: pointer;
             transition: all .3s;
+            text-transform: uppercase;
+            margin: 0;
 
             &:hover {
                 color: var(--blue);
@@ -149,6 +156,7 @@
         }
         &-input:checked + .form-three__check-label .form-three__check-icon {
             fill: var(--blue);
+            border-bottom-color: var(--blue);
         }
     }
 }

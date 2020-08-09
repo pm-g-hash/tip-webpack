@@ -5,6 +5,7 @@
 @import "./main/reboot"; // Сброс стилей
 
 // Общие элементы
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'; // Fancybox
 @import "./elem/swiper"; // Общие стили сайдера
 @import "./elem/slider.str"; // Стрелки слайдеров
 @import "./elem/slider.pagination"; // Пагинация слайдеров
@@ -16,6 +17,7 @@
 @import "./elem/jquery.formstyler"; // Стилизация элементов
 @import "./elem/star"; // Звёздочки
 @import "./elem/search"; // Форма поиска
+@import "./elem/window.one"; // Окно
 
 // Шаблон
 @import "./template/header"; // Шапка сайта

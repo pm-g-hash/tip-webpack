@@ -5,7 +5,22 @@ import formstyler from './jquery.formstyler.js';
 window.jQuery = $;
 window.$ = $;
 
+require('@fancyapps/fancybox');
+
 $(function() {
+
+    /* - - - Подключение fancybox - - - */
+    $('[data-fancybox]').fancybox({
+        buttons: [
+            "zoom",
+            //"share",
+            "slideShow",
+            "fullScreen",
+            //"download",
+            //"thumbs",
+            "close"
+        ],
+    });
 
     // Стилизация элементов
     $('select').styler();
