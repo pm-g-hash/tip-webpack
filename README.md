@@ -26,6 +26,7 @@ https://brekot.github.io/tip-webpack/dist/service.html<br>
 <b>Bootstrap используются только классы:</b><br>
 <ul>
     <li>.container</li>
+    <li>.col-*-*</li>
     <li>.d-*-none</li>
     <li>.d-*-inline-block</li>
     <li>.d-*-block</li>

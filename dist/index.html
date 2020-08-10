@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
         <title>PrintMe - Index</title>
-        <link href="./local/template_styles.css?397016ad48ef0ffc5603" rel="stylesheet" />
+        <link href="./local/template_styles.css?00d3708d153b7a3c3ca9" rel="stylesheet" />
     </head>
 
     <body>
@@ -1041,63 +1041,109 @@
                 <div class="window-one__title">Авторизация</div>
                 <div class="window-one__body">
                     <div class="form-three">
-                        <form>
-                            <div class="form-three__check">
-                                <div class="form-three__check-part">
-                                    <input class="form-three__check-input" id="test3" type="radio" value="0" name="auth" checked="checked" />
-                                    <label class="form-three__check-label" for="test3">
-                                        <svg class="form-three__check-icon">
-                                            <use xlink:href="./local/img/sprite.icon.svg#close"></use>
-                                        </svg>
-                                        Я уже зарегистрирован
-                                    </label>
+                        <div class="form-three__check">
+                            <div class="form-three__check-part">
+                                <input class="form-three__check-input js-auth-check" id="auth_check_one" type="radio" value="auth" name="auth_check" checked="checked" />
+                                <label class="form-three__check-label" for="auth_check_one">
+                                    <svg class="form-three__check-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#close"></use>
+                                    </svg>
+                                    Я уже зарегистрирован
+                                </label>
+                            </div>
+                            <div class="form-three__check-part">
+                                <input class="form-three__check-input js-auth-check" id="auth_check_two" type="radio" value="registration" name="auth_check" />
+                                <label class="form-three__check-label" for="auth_check_two">
+                                    <svg class="form-three__check-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#close"></use>
+                                    </svg>
+                                    Я здесь впервые
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="window-one__change" id="form-auth">
+                            <form>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">E-MAIL:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="email" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
                                 </div>
-                                <div class="form-three__check-part">
-                                    <input class="form-three__check-input" id="test4" type="radio" value="1" name="auth" />
-                                    <label class="form-three__check-label" for="test4">
-                                        <svg class="form-three__check-icon">
-                                            <use xlink:href="./local/img/sprite.icon.svg#close"></use>
-                                        </svg>
-                                        Я здесь впервые
-                                    </label>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Пароль:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="password" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
                                 </div>
-                            </div>
-                            <div class="form-three__line">
-                                <span class="form-three__info">E-MAIL:</span>
-                                <input class="form-three__input form-three__input_padding-full" type="email" value="" />
-                                <svg class="form-three__input-icon">
-                                    <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
-                                </svg>
-                            </div>
-                            <div class="form-three__line">
-                                <span class="form-three__info">Пароль:</span>
-                                <input class="form-three__input form-three__input_padding-full" type="password" value="" />
-                                <svg class="form-three__input-icon">
-                                    <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
-                                </svg>
-                            </div>
-                            <div class="form-three__check">
-                                <div class="form-three__check-part">
-                                    <input class="form-three__check-input" id="test5" type="checkbox" value="0" name="remember" checked="checked" />
-                                    <label class="form-three__check-label" for="test5">
-                                        <svg class="form-three__check-icon">
-                                            <use xlink:href="./local/img/sprite.icon.svg#close"></use>
-                                        </svg>
-                                        Запомнить меня
-                                    </label>
+                                <div class="form-three__check">
+                                    <div class="form-three__check-part">
+                                        <input class="form-three__check-input" id="test5" type="checkbox" value="0" name="remember" checked="checked" />
+                                        <label class="form-three__check-label" for="test5">
+                                            <svg class="form-three__check-icon">
+                                                <use xlink:href="./local/img/sprite.icon.svg#close"></use>
+                                            </svg>
+                                            Запомнить меня
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="window-one__center">
-                                <button type="submit" class="btn-one">Войти</button>
-                            </div>
-                            <div class="window-one__center">
-                                <a href="javascript:;">3абыли пароль?</a>
-                            </div>
-                        </form>
+                                <div class="window-one__center">
+                                    <button type="submit" class="btn-one">Войти</button>
+                                </div>
+                                <div class="window-one__center">
+                                    <a href="javascript:;">3абыли пароль?</a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="window-one__change window-one__hide" id="form-registration">
+                            <form>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Имя:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="text" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Фамилия:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="text" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Телефон:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="tel" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">E-MAIL:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="email" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Пароль:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="password" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="window-one__center">
+                                    <button type="submit" class="btn-one">Зарегистрироваться</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?397016ad48ef0ffc5603"></script>
+        <script type="text/javascript" src="./local/js/script.js?00d3708d153b7a3c3ca9"></script>
     </body>
 </html>

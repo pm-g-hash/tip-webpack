@@ -22,6 +22,14 @@ $(function() {
         ],
     });
 
+    // 
+    $('.js-auth-check').change(function(){
+
+        $('.window-one__change').addClass('window-one__hide');
+
+        $('#form-' + $(this).val()).removeClass('window-one__hide');
+    });
+    
     // Стилизация элементов
     $('select').styler();
 
