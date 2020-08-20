@@ -10,6 +10,7 @@
 	"dependencies": {
 		"@fancyapps/fancybox": "^3.5.7",
 		"jquery": "^3.5.1",
+		"masonry-layout": "^4.2.2",
 		"swiper": "^5.4.5"
 	},
 	"devDependencies": {

@@ -9,6 +9,10 @@
     }
     &__text {
         letter-spacing: .05em;
+
+        &_hidden {
+            display: none;
+        }
     }
     &__btn {
         margin: 20px 0 0;

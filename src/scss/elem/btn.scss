@@ -41,6 +41,12 @@
             background-color: var(--blue);
         }
     }
+    &:not(.btn-link_active) &__text-hide {
+        display: none;
+    }
+    &.btn-link_active &__text-show {
+        display: none;
+    }
 }
 
 .btn-one {

@@ -1,6 +1,7 @@
 import $ from "jquery";
 import Swiper from './swiper.js';
 import formstyler from './jquery.formstyler.js';
+import Masonry from 'masonry-layout';
 
 window.jQuery = $;
 window.$ = $;
@@ -80,6 +81,19 @@ $(function() {
             $(this).next('.menu-main__lvl2').slideToggle();
         });
     }
+
+    $('.js-shwo-text').click(function(){
+
+        $('#' + $(this).data('id')).slideToggle();
+
+        $(this).toggleClass('btn-link_active');
+    });
+
+    // Расположение бловков
+    var msnry = new Masonry( '.grid', {
+        itemSelector: '.grid-item',
+        percentPosition: true
+    });
 
     // Главный слайдер
     let intSlideMainCount = $('.slider-main__slide').length;
