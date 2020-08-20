@@ -35,11 +35,11 @@ $(function() {
     $('select').styler();
 
 	// Прикрепляем шапку
-    var headerOffsetTop = $(".main-header").offset().top;
+    let headerOffsetTop = $(".main-header").offset().top;
 
     $(window).scroll(function () {
 
-        var winTop = $(window).scrollTop();
+        let winTop = $(window).scrollTop();
 
         if (winTop > headerOffsetTop) $(".main-header").addClass("main-header_fixed");
 		else $(".main-header").removeClass("main-header_fixed");
@@ -53,7 +53,7 @@ $(function() {
 
 	$(document).mouseup(function (e){
 
-        var div = $(".search-form");
+        let div = $(".search-form");
 
         if (!div.is(e.target) && div.has(e.target).length === 0)
         {
@@ -82,6 +82,7 @@ $(function() {
         });
     }
 
+    // Раскрытие текста
     $('.js-shwo-text').click(function(){
 
         $('#' + $(this).data('id')).slideToggle();
@@ -90,10 +91,13 @@ $(function() {
     });
 
     // Расположение бловков
-    var msnry = new Masonry( '.grid', {
-        itemSelector: '.grid-item',
-        percentPosition: true
-    });
+    if ($('.grid').length > 0)
+    {
+        let msnry = new Masonry('.grid', {
+            itemSelector: '.grid-item',
+            percentPosition: true
+        });
+    }
 
     // Главный слайдер
     let intSlideMainCount = $('.slider-main__slide').length;
