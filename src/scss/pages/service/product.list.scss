@@ -96,10 +96,6 @@
             &__item {
                 margin: 0 0 25px;
                 width: 50%;
-
-                &:nth-child(n + 8) {
-                    display: none;
-                }
             }
             &__block {
                 text-transform: uppercase;
@@ -113,11 +109,11 @@
             &__more {
                 font-size: 10px;
             }
-            &__btn {
+/*            &__btn {
                 margin: 45px 0 0;
                 display: block;
                 text-align: center;
-            }
+            }*/
         }
     }
     @include media-breakpoint-only(sm)

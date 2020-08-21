@@ -83,15 +83,23 @@ $(function() {
     }
 
     // Раскрытие текста
-    $('.js-shwo-text').click(function(){
+    $('.js-show-text').click(function(){
 
         $('#' + $(this).data('id')).slideToggle();
 
         $(this).toggleClass('btn-link_active');
     });
 
+    // Показ всех товаров
+    $('.js-show-product').click(function(){
+
+        $('.product-list2__item:nth-child(n+4)').toggle();
+
+        $(this).toggleClass('btn-link_active');
+    });
+
     // Расположение бловков
-    if ($('.grid').length > 0)
+    if ($('.grid').length > 0 && $(window).width() > 575)
     {
         let msnry = new Masonry('.grid', {
             itemSelector: '.grid-item',
